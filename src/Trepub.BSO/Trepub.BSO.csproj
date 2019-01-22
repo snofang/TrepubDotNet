@@ -15,8 +15,6 @@
   
   <ItemGroup>
     <PackageReference Include="Castle.Core" Version="4.3.1" />
-    <PackageReference Include="TweetinviAPI" Version="4.0.0" />
-    <!--<PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="2.1.1" />-->
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Trepub.Common\Trepub.Common.csproj" />
