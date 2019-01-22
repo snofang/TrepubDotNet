@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Trepub.Web.API.Test": {
+      "commandName": "Project",
+      "commandLineArgs": "decrypt  8X/3UNvh20bTxB1ZtUL8iA=="
+    }
+  }
+}

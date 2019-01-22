@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath>..\..\bin</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>..\..\bin\</OutputPath>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="Castle.Core" Version="4.3.1" />
+    <PackageReference Include="TweetinviAPI" Version="4.0.0" />
+    <!--<PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="2.1.1" />-->
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Trepub.Common\Trepub.Common.csproj" />
+    <ProjectReference Include="..\Trepub.IFS\Trepub.IFS.csproj" />
+  </ItemGroup>
+
+</Project>
