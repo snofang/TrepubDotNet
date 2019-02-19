@@ -138,7 +138,7 @@ namespace Trepub.BSO
             }
 
             String verificationCode = GetRandomNumber();
-            this.services.SendSMS(profile.MobileNumber, verificationCode);
+            //TODO: to send verification code via email or sms
 
             profile.VerificationSendDate = DateTime.Now;
             profile.VerificationCode = verificationCode;

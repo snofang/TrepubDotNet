@@ -23,7 +23,7 @@ namespace Trepub.Web.API.Test.ProfileTests
             //changing password via invalid old password
             var passwordChangeView = new ChangePasswordView()
             {
-                NewPassword = "Trepub12345",
+                NewPassword = "trepub12345",
                 OldPassword = "invalidPassword"
             };
             bool invalidPasswordError = false;
@@ -47,7 +47,7 @@ namespace Trepub.Web.API.Test.ProfileTests
             //changing password via corrent old password
             passwordChangeView = new ChangePasswordView()
             {
-                NewPassword = "Trepub12345",
+                NewPassword = "trepub12345",
                 OldPassword = client.Profile.Password
             };
             client.Profiles_changeMyPassword(passwordChangeView);

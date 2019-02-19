@@ -36,7 +36,7 @@ namespace Trepub.Web.API.Test.Common
             {
                 this.profile = new ProfileView()
                 {
-                    Password = "Trepub123",
+                    Password = "trepub123",
                     UserId = "09123456789"
                 };
 
@@ -50,7 +50,7 @@ namespace Trepub.Web.API.Test.Common
 
         public void Login()
         {
-            var tokenClient = new TokenClient(baseUrl + "/connect/token" /*endpoint.TokenEndpoint*/, "roClient", "vBoxSecret");
+            var tokenClient = new TokenClient(baseUrl + "/connect/token" /*endpoint.TokenEndpoint*/, "roClient", "trepubSecrect");
             tokenResponse = tokenClient.RequestResourceOwnerPasswordAsync(profile.UserId, profile.Password, "openid").Result;
             
             if (tokenResponse.IsError)

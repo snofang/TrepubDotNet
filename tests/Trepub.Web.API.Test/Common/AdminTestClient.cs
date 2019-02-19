@@ -13,10 +13,7 @@ namespace Trepub.Web.API.Test.Common
     {
         public AdminTestClient(string baseUrl) : base(baseUrl, new ProfileView()
         {
-            //BirthDate = new PersianCalendar().ToDateTime(1365, 6, 12, 0, 0, 0, 0),
-            //MobileNumber = "09999999999",
-            //NationalCode = "administrator",
-            Password = "Trepub123",
+            Password = "trepub123",
             UserId = "administrator",
         }
         )
@@ -39,26 +36,6 @@ namespace Trepub.Web.API.Test.Common
                 return instance;
             }
         }
-
-
-
-
-
-        public static ProfileView GetSampleStaffProfile()
-        {
-            return new ProfileView()
-            {
-                ////Mrs Hanieh Rahimi Hamrah
-                //BirthDate = new PersianCalendar().ToDateTime(1371, 11, 10, 0, 0, 0, 0),
-                MobileNumber = "01234567890",
-                //NationalCode = "3860530216",
-                //Password = "Trepub123",
-                UserId = "3860530216",
-                Password = "Trepub123",
-            };
-
-        }
-
 
     }
 }

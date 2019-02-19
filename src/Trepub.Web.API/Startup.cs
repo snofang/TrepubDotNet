@@ -150,7 +150,7 @@ namespace Trepub.Web.API
                     AllowedGrantTypes = GrantTypes.ResourceOwnerPassword,
                     ClientSecrets =
                     {
-                        new IdentityServer4.Models.Secret("vBoxSecret".Sha256())
+                        new IdentityServer4.Models.Secret("trepubSecrect".Sha256())
                     },
                     AllowedScopes = {
                         IdentityServerConstants.StandardScopes.OpenId, // For UserInfo endpoint.
